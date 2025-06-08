@@ -1,0 +1,23 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "simple base by roox",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "pairing",
+    "roox"
+  ],
+  "author": "rooxJSphire",
+  "license": "MIT",
+  "dependencies": {
+    "@fizzxydev/baileys-pro": "^8.7.2",
+    "chalk": "^4.1.2",
+    "pino": "^8.21.0"
+  }
+}
