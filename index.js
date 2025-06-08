@@ -37,12 +37,12 @@ async function connectToWhatsApp() {
     roox.ev.on("creds.update", saveCreds);
     roox.ev.on("messages.upsert", async (m) => await messageHandler(roox, m));
 
-    if (!roox.authState.creds?.registered) {
+    if (!roox.authState.creds?.regisntered) {
         await new Promise(resolve => setTimeout(resolve, 5000));
         const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
         rl.question(chalk.cyan("📌 MASUKKAN NOMOR WHATSAPP ANDA (contoh: 628xxxxxxx): "), async (nomor) => {
             rl.close();
-
+enenw
             if (!nomor.startsWith("62") || nomor.length < 10) {
                 console.log(chalk.red("❌ Nomor tidak valid. Harus diawali '62' dan minimal 10 digit."));
                 process.exit(1);
