@@ -29,8 +29,7 @@ async function connectToWhatsApp() {
             }
         } else if (connection === "open") {
             retryCount = 0;
-            console.log(chalk.green("✅ BOT BERHASIL TERHUBUNG!"));
-            roox.newsletterFollow("120363418914182399@newsletter")
+            console.log(chalk.green("✅ BOT BERHASIL TERHUBUNG!"))
         }
     });
 
